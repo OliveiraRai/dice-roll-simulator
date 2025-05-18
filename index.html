@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll Simulator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: #ddd;
+      }
+      #game-container {
+        border-radius: 10px;
+        padding: 0 20px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px #aaa;
+      }
+      #game-container h1 {
+        padding: 15px 0;
+      }
+      .dice {
+        font-size: 3rem;
+      }
+      #game-container button {
+        margin: 20px 0;
+        padding: 5px 0;
+        width: 100px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid;
+        border-radius: 5px;
+      }
+      #game-container button:hover {
+        background-color: #4e74cd;
+        color: white;
+        border: 1px solid transparent;
+      }
+      #game-container button:active {
+        background-color: #a2beff;
+      }
+      #roll-history {
+        list-style: none;
+      }
+      #roll-history li {
+        background-color: #ddd;
+        box-shadow: 0 2px 3px #4d4d4d;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        transition: 0.3s;
+      }
+      #roll-history li:hover {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Dice Roll Simulator</h1>
+      <div class="dice" id="dice">&#9860;</div>
+      <div id="button-container">
+        <button id="button">Roll Dice</button>
+        <button id="clear">Clear</button>
+      </div>
+      <ul id="roll-history"></ul>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>

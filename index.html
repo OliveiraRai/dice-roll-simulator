@@ -30,6 +30,17 @@
       .dice {
         font-size: 3rem;
       }
+      @keyframes rotate360 {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+      }
+      .rotate {
+        animation: rotate360 0.5s ease;
+      }
       #game-container button {
         margin: 20px 0;
         padding: 5px 0;
